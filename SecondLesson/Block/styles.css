@@ -1,0 +1,39 @@
+.container{
+    width: 1150px;
+    border: none;
+    margin: 1px auto;
+    height: 400px;
+    
+}
+div{
+    margin: 10px 35px;
+    height: 150px;
+    border: 1px solid grey;
+    padding: 5px;
+    overflow: hidden;
+}
+.firstLine{
+    display: inline-block;
+    width: 250px;
+}
+.secondLine{
+    display: inline-block;
+    width: 418px;
+}
+#first{
+    text-align: center;
+    }
+#second{
+    text-align: center;
+    line-height: 140px;
+    }
+#third{
+    text-align: center;
+}
+#fourth{
+    line-height: 140px;
+}
+#fifth{
+    text-align: right;
+    line-height: 140px;
+}
