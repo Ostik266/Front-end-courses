@@ -1,0 +1,29 @@
+.firstDiv{
+    background-color: yellow;
+    height: 100px;
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.A{
+    background-color: red;
+    order: 2;
+    /* flex-basis: 100px;
+    flex-shrink: 2; */
+    flex: 2 1 100px;
+}
+.B{
+    background-color: blue;
+    order: 1;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+.C{
+    background-color: green;
+    order: 0;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
