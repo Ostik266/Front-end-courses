@@ -1,0 +1,67 @@
+@media screen and (max-width: 500px){
+    .main{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center; 
+        order: 1;
+    }
+    .secondContainer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        order: 0;
+    }
+    .container div{
+        border: 1px solid gray;
+        height: 150px;
+        width: 250px;
+        margin: 10px 35px;
+        padding: 5px;
+    }
+    .secondContainer div{
+        border: 1px solid gray;
+        height: 150px;
+        width: 250px;
+        margin: 10px 35px;
+        padding: 5px;
+    }
+    
+    .firstLine{ 
+        display: flex;
+    }
+    .secondLine{
+        display: flex;
+        justify-content: center;
+    }
+    #first{
+        align-items: center;
+        justify-content: flex-end;
+        order: 1;
+    }
+    #second{
+        align-items: flex-end;
+        order: 2;
+    }
+    #second::first-letter{
+        color: red;
+    }
+    #third{
+        align-items: center;
+        justify-content: flex-start;
+        order: 0;
+    }
+    #fourth {
+        order: 1;
+        align-items: flex-end;
+    }
+    
+    #fifth{
+        align-items: flex-start;
+        order: 0;
+    }
+}
