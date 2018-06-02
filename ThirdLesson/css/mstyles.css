@@ -47,7 +47,7 @@
         align-items: flex-end;
         order: 2;
     }
-    #second::first-letter{
+    #second p::first-letter{
         color: red;
     }
     #third{

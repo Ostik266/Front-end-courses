@@ -39,7 +39,7 @@
 #second{
     align-items: center;
     }
-#fourth ::first-letter{
+#fourth p::first-letter{
     color: red;
 }
 
