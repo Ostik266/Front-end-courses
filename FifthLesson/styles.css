@@ -1,0 +1,76 @@
+div.container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+div.main{
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* animation-name: mainAn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: initial; */
+    animation: mainAn 2s ease-in 0s infinite;
+}
+div.main span{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid red;
+}
+div.main span:nth-child(1){
+    animation: span1 2s ease-in-out 0s infinite;
+}
+div.main span:nth-child(2){
+    animation: span2 2s ease-in-out 0s infinite;
+}
+div.main span:nth-child(3){
+    animation: span3 2s ease-in-out 0s infinite;
+}
+div.main span:nth-child(4){
+    animation: span4 2s ease-in-out 0s infinite;
+}
+@keyframes mainAn {
+    from{transform: rotate(-45deg);}
+    50%{transform: rotate(-135deg);}
+    to{transform: rotate(-225deg);}
+}
+@keyframes span1 {
+    from{transform: translate(0);}
+    50%{
+        transform: translate(75px, 75px);
+        border-color: blue;
+    }
+    to{transform: translate(0);}
+}
+@keyframes span2 {
+    from{transform: translate(0);}
+    50%{
+        transform: translate(-75px, 75px);
+        border-color: purple;
+    }
+    to{transform: translate(0);}
+}
+@keyframes span3 {
+    from{transform: translate(0);}
+    50%{
+        transform: translate(75px, -75px);
+        border-color: yellow;
+    }
+    to{transform: translate(0);}
+}
+@keyframes span4 {
+    from{transform: translate(0);}
+    50%{
+        transform: translate(-75px, -75px);
+        border-color: green;
+    }
+    to{transform: translate(0);}
+}
